@@ -250,6 +250,30 @@
 			"maxValue": 100,
 			"defaultValue": 10
 		}
+		{
+  			"#": "21",
+  			"$if": "firmwareVersion >= 1.8",
+  			"label": "Meter Report Scale",
+  			"description": "Select the scale for meter reports (kWh, W, or V).",
+  			"valueSize": 1,
+  			"defaultValue": 2,
+  			"allowManualEntry": false,
+  			"options": [
+    				{
+      					"label": "kWh",
+      					"value": 1
+    				},
+    				{
+      					"label": "W",
+      					"value": 2
+    				},
+    				{
+      					"label": "V",
+      					"value": 4
+    				}
+  				]
+			}
+
 	],
 	"compat": {
 		// The device reports its relay state via the Basic CC
